@@ -23,7 +23,7 @@ $age = 10;
 // ça fonctionne mais le résultat démandé était pas le bon je laisse ça au cas où
 
 if ($age >=6 && $age <=7) {
-    $cat = "Poussin";
+        $cat = "Poussin";
 }   elseif ($age >=8 && $age <=9) {
         $cat = "Pupille";
 }   elseif ($age >=10 && $age <=11) {
@@ -31,7 +31,7 @@ if ($age >=6 && $age <=7) {
 }   elseif ($age >=12) {
         $cat = "Cadet";
 }   elseif ($age <=6) {
-    echo "Il n'y a pas de catégorie pour cet enfant";
+        echo "Il n'y a pas de catégorie pour cet enfant";
 }
 
 echo "L’enfant qui a $age ans appartient à la catégorie « $cat »";
