@@ -8,3 +8,8 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 
 <?php
 
+$age = 32;
+$sex = "F";
+
+if ($age >=18 && $age <= 35 && $sex = "F") {
+}
