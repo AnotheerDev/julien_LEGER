@@ -9,6 +9,13 @@ Attention, la valeur générée devra être arrondie à 2 décimales.</p>
 
 <?php
 
-$franc = (100)
-$Euro = ()
+$franc = 100;
+$euro = convert($franc);
 
+function convert($franc) {
+    $euro = number_format(($franc / 6.55957),2);
+    return $euro;
+}
+
+echo "Montant en francs : $franc <br>";
+echo " $franc francs = $euro € <br>";

@@ -15,8 +15,8 @@ function estUnPalindrome($palin) {
 }
 
 if (estUnPalindrome($palin)) {
-    echo "La phrase « $palin » est palindrome";
+    echo "La phrase « $palin » est palindrome <br>";
 }
 else {
-    echo "«La phrase « $palin » n'est pas palindrome»";
+    echo "«La phrase « $palin » n'est pas palindrome» <br>";
 }
