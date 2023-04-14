@@ -11,12 +11,14 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 $age = 32;
 $sex = "F";
 
-if (($age >=18 && $age <= 35 && $sex = "F") || ($age >=20 && $sex = "H")) {
-    echo "Age : " . $age . "<br>";
-    echo "Sexe : " . $sex . "<br>";
+echo "Age : " . $age . "<br>";
+echo "Sexe : " . $sex . "<br>";
+
+$cond1 = ($age >=18 && $age <= 35 && $sex = "F");
+$cond2 = ($age >=20 && $sex = "H");
+
+if ($cond1 || $cond2) {
     echo "La personne est imposable.";
 } else {
-    echo "Age : " . $age . "<br>";
-    echo "Sexe : " . $sex . "<br>";
     echo "La personne n'est pas imposable.";
 }
