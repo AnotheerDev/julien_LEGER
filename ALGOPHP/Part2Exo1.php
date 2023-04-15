@@ -6,12 +6,12 @@
 
 <?php
 
-$texte = "mon texte en paramètre";
+// $texte = "mon texte en paramètre";
 
-function convertirMajRouge($texte) {
-    if ($texte == "mon texte en paramètre"){
-        return "<span style='color:red; text-transform:uppercase;'>".$texte."</span>";
-    }
-}
+// function convertirMajRouge($texte) {
+//     if ($texte == "mon texte en paramètre"){
+//         return "<span style='color:red; text-transform:uppercase;'>".$texte."</span>";
+//     }
+// }
 
-echo convertirMajRouge($texte); 
+// echo convertirMajRouge($texte);     PREMIER ESSAI SANS AVOIR VU LA VIDEO :X
