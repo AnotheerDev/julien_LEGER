@@ -10,8 +10,8 @@ $texte = "mon texte en paramètre";
 
 function convertirMajRouge($texte) {
     if ($texte == "mon texte en paramètre"){
-        return "\033[1;31m" .strtoupper($texte). "\033[0m";
+        return "<span style='color:red; text-transform:uppercase;'>".$texte."</span>";
     }
 }
-echo $texte; 
 
+echo convertirMajRouge($texte); 
