@@ -5,3 +5,23 @@
 <h2>Résultat</h2>
 
 <?php
+
+$capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome"];
+
+
+
+function TableauHTML($capitales) {
+    ksort($capitales);
+
+
+    echo "<table>";
+    echo "<tr><th>PAYS</th><th>CAPITALE</th></tr>";
+    foreach ($capitales as $cap => $ville) {
+        echo "<tr><td>" .strtoupper($cap)."</td><td>$ville</td></tr>";
+    }
+    echo "</table>";
+}
+
+TableauHTML($capitales);
+
+// je n'ai pas trouver comme faire apparaitre les cellules  du coup je sais pas si j'ai bon ??
