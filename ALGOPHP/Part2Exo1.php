@@ -6,5 +6,12 @@
 
 <?php
 
-$texte = "mon texte en paramètre"
+$texte = "mon texte en paramètre";
+
+function convertirMajRouge($texte) {
+    if ($texte == "mon texte en paramètre"){
+        return "\033[1;31m" .strtoupper($texte). "\033[0m";
+    }
+}
+echo $texte; 
 
