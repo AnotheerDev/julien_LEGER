@@ -4,24 +4,54 @@
 
 <h2>Résultat</h2>
 
+
 <?php
 
 $capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome"];
 
-
-
-function TableauHTML($capitales) {
-    ksort($capitales);
-
-
-    echo "<table>";
-    echo "<tr><th>PAYS</th><th>CAPITALE</th></tr>";
-    foreach ($capitales as $cap => $ville) {
-        echo "<tr><td>" .strtoupper($cap)."</td><td>$ville</td></tr>";
-    }
-    echo "</table>";
+foreach($capitales as $pays => $capitale) {
+    echo "$pays a pour capitale : $capitale<br>";
 }
 
-TableauHTML($capitales);
+echo afficherTableHTML($capitales);
+
+function afficherTableHTML($capitales) {
+    ksort($capitales);
+    $result = "<table border=1>
+                    <thead>
+                        <tr>
+                            <th>Pays</th>
+                            <th>Capitales</th>
+                        </tr>
+                    </thead>
+                <tbody>";
+    foreach($capitales as $pays => $capitale) {
+        $result .= "<tr>
+                        <td>".mb_strtoupper($pays)."</td>
+                        <td>".ucfirst($capitale)."</td>
+                    </tr>";
+    }
+
+    $result .= "</tbody></table>";
+    return $result;
+}
+
+// $capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome"];
+
+
+
+// function TableauHTML($capitales) {
+//     ksort($capitales);
+
+
+//     echo "<table>";
+//     echo "<tr><th>PAYS</th><th>CAPITALE</th></tr>";
+//     foreach ($capitales as $ville => $capitale) {
+//         echo "<tr><td>" .strtoupper($ville)."</td><td>$capitale</td></tr>";
+//     }
+//     echo "</table>";
+// }
+
+// TableauHTML($capitales);
 
 // je n'ai pas trouver comme faire apparaitre les cellules  du coup je sais pas si j'ai bon ??

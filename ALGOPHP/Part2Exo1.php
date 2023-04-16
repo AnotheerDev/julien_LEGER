@@ -10,8 +10,14 @@
 
 // function convertirMajRouge($texte) {
 //     if ($texte == "mon texte en paramètre"){
-//         return "<span style='color:red; text-transform:uppercase;'>".$texte."</span>";
+//         return "<p style='color:red; text-transform:uppercase;'>".$texte."</p>";
 //     }
 // }
 
 // echo convertirMajRouge($texte);     PREMIER ESSAI SANS AVOIR VU LA VIDEO :X
+
+function convertirMajColor($texte, $color) {
+    return "<p style='color:$color'>" .mb_strtoupper($texte)."</p>";
+}
+
+echo convertirMajColor($texte, $color);
