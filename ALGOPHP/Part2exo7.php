@@ -1,4 +1,4 @@
-<h1>Exercice 6</1>
+<h1>Exercice 7</1>
 
 <p>Créer une fonction personnalisée permettant de générer des cases à cocher. On pourra préciser 
 dans le tableau associatif si la case est cochée ou non.
@@ -12,11 +12,17 @@ genererCheckbox($elements);
 
 <?php
 
-$elements ["Choix 1", "Choix 2", "Choix 3"];
+$elements = ["Choix 1" => false, "Choix 2" => true, "Choix 3" => false];
 
 echo genererCheckbox($elements);
 
 
 function genererCheckbox($elements) {
-
-}
+    foreach ($elements as $element => $boo) {
+        echo '<label><input type ="checkbox" name="' . $element . '"';
+        if ($boo) {
+            echo " checked";
+        }
+        echo '> ' . $element . '</label><br>';
+        }
+    }
