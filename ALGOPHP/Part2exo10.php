@@ -11,9 +11,24 @@ de validation (submit).</p>
 <?php
 
 $titres = ["Développeur Logiciel","Designer web","Intégrateur", "Chef de projet"];
+$infoInput = ["Nom", "Prénom", "Adresse e-mail", "Ville", "Sexe"];
+$formulaire = afficherInput($infoInput);
 
+echo $formulaire;
 echo afficherTitres($titres);
 echo '<input type="submit" value="Validation" />';
+
+function afficherInput($infoInput) {
+    $formulaire = "";
+    foreach($infoInput as $info) {
+        $formulaire .= '<label for="' . $info .'">' . $info .':</label>';
+        $formulaire .= '<br>';
+        $formulaire .= '<input type="text id="' . $info . '" name="'. $info .'">';
+        $formulaire .= '<br>';
+    }
+    return $formulaire;
+}
+
 
 
 function afficherTitres ($titres) {
