@@ -12,3 +12,11 @@ genererCheckbox($elements);
 
 <?php
 
+$elements ["Choix 1", "Choix 2", "Choix 3"];
+
+echo genererCheckbox($elements);
+
+
+function genererCheckbox($elements) {
+
+}
