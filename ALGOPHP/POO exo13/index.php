@@ -20,5 +20,5 @@ suivants :
 
 require "voiture.php";
 
-$tuture1 = new voiture("Peugeot", "408", 5, 0);
-$tuture2 = new voiture("Citroën", "C4", 3, 0);
+$tuture1 = new Voiture("Peugeot", "408", 5, 0);
+$tuture2 = new Voiture("Citroën", "C4", 3, 0);
