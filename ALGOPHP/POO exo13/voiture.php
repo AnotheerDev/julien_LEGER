@@ -9,7 +9,7 @@ class Voiture {
 
 
 
-    function __construct(string $_marque, string $_modele, $_nbPortes) {
+    function __construct(string $_marque, string $_modele, $_nbPortes, $_VitesseActuelle) {
         $this->_marque = $_marque;
         $this->_modele = $_modele;
         $this->_nbPortes = $_nbPortes;
