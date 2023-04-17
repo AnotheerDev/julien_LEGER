@@ -21,3 +21,24 @@ $datedujour = ["Jour" => 21, "Mois" => 05, "Année" => 2018];
 $age = Age($naissance, $datedujour);
 
 echo "Age de la personne: " . $age['ans'] . " ans " . $age['mois'] . " mois " . $age['jours'] . " jours.";
+
+
+//   correction 
+// function calcAge(string $date){
+
+//     $date1 = new DateTime($date);
+
+//     $currentDate = new DateTime();
+
+//     $interval = $date1->diff($currentDate);
+
+//     echo "age : " . $interval->y . " ans, " . $interval->m . " mois, " . $interval->d . " jours </br>";
+
+// }
+
+
+
+
+// calcAge("1985-01-19");
+
+// calcAge("1989-01-11");
