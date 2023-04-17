@@ -14,4 +14,11 @@ suivants :
 
 <h2>Résultat</h2>
 
+
+
 <?php
+
+require "voiture.php";
+
+$tuture1 = new voiture("Peugeot", "408", 5, 0);
+$tuture2 = new voiture("Citroën", "C4", 3, 0);
