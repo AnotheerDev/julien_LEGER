@@ -15,4 +15,9 @@ class Voiture {
         $this->_nbPortes = $_nbPortes;
         $this->_vitesse = $_VitesseActuelle;
     }
+
+    public function afficherInfo() {
+        echo "Nom et modèle du véhicule : " . $this->_marque . " " . $this->_modele . "<br>";
+        echo "Nombre de portes : " . $this->_nbPortes . "<br>";
+    }
 }

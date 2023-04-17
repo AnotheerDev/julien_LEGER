@@ -22,3 +22,14 @@ require "voiture.php";
 
 $tuture1 = new Voiture("Peugeot", "408", 5, 0);
 $tuture2 = new Voiture("Citroën", "C4", 3, 0);
+
+echo "Info véhicule 1 :<br>";
+echo "***********************<br>";
+$tuture1->afficherInfo();
+
+echo "_________________________________________<br>";
+
+echo "Info véhicule 2 :<br>";
+echo "***********************<br>";
+$tuture2->afficherInfo();
+
