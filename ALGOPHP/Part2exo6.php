@@ -7,3 +7,18 @@ alimenterListeDeroulante($elements);</p>
 <h2>Résultat</h2>
 
 <?php
+
+$elements = array("Monsieur","Madame","Mademoiselle");
+echo alimenterListeDeroulante($elements);
+
+function alimenterListeDeroulante($elements) {
+    $result = '<select>
+            <option selected="selected">Dénomination</option> ';
+    
+    foreach ($elements as $deno) {
+        $result .= '<option value="' . strtolower($deno) .'">' . $deno . '</option>';
+    }
+
+    $result .= "</select>";
+    return $result;
+}
