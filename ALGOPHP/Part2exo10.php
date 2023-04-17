@@ -1,4 +1,4 @@
-<h1>Exercice 9</1>
+<h1>Exercice 10</1>
 
 <p>En utilisant l’ensemble des fonctions personnalisées crées précédemment, créer un formulaire 
 complet qui contient les informations suivantes : champs de texte avec nom, prénom, adresse e-mail, ville, sexe et une liste de choix parmi lesquels on pourra sélectionner un intitulé de formation : 
