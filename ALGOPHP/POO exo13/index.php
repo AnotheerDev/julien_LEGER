@@ -13,15 +13,23 @@ suivants :
 </p>
 
 <h2>Résultat</h2>
-
+<!-- donner une def de classe , objet , de chainage  -->
 
 
 <?php
 
 require "voiture.php";
 
-$tuture1 = new Voiture("Peugeot", "408", 5, 0);
+$tuture1 = new Voiture("Peugeot", "408", 5, 50);
 $tuture2 = new Voiture("Citroën", "C4", 3, 0);
+
+
+$tuture1->demarrer();
+$tuture1->accelerer(50);
+$tuture2->demarrer();
+$tuture2->stopper(20);
+$tuture1->vitesse();
+$tuture2->vitesse();
 
 echo "Info véhicule 1 :<br>";
 echo "***********************<br>";
