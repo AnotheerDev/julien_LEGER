@@ -2,12 +2,11 @@
 
 
 class Voitureelec extends Voiture {
-    private int $_batterie;
+    private int $_autonomie;
 
 
-    function __construct(string $_marque, string $_modele, $_autonomie) {
-        $this->_marque = $_marque;
-        $this->_modele = $_modele;
+    function __construct(string $_marque, string $_modele, int $_autonomie) {
+        parent::__construct($_marque, $_modele);
         $this->_autonomie = $_autonomie;
     }
 
@@ -30,7 +29,6 @@ class Voitureelec extends Voiture {
     // function qui rattache toutes les infos 
     public function getInfos() {
         $info =  "Nom et modèle du véhicule éléctrique: ".$this->_marque." ".$this->_modele.", autonomie de ".strval($this->_autonomie)." km.<br>";
-
         return $info;
     }
 }
