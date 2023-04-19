@@ -10,7 +10,7 @@ class Voiture {
 
 
 
-    function __construct(string $_marque, string $_modele, $_nbPortes, $_isDemarree) {
+    function __construct(string $_marque, string $_modele, int $_nbPortes, bool $_isDemarree) {
         $this->_marque = $_marque;
         $this->_modele = $_modele;
         $this->_nbPortes = $_nbPortes;
@@ -31,6 +31,33 @@ class Voiture {
         return $this->_nbPortes;
     }
 
+    public function getVitesseActuelle(){
+        return $this->_vitesseActuelle;
+    }
+
+    public function getIsDemarree(){
+        return $this->_isDemarree;
+    }
+
+    public function setMarque(string $_marque) {
+        $this->_marque = $_marque;
+    }
+
+    public function setModele(string $_modele) {
+        $this->_modele = $_modele;
+    }
+
+    public function setNbPortes(int $_nbPortes) {
+        $this->_nbPortes = $_nbPortes;
+    }
+
+    public function setVitesseActuelle(float $_vitesseActuelle){
+        $this->_vitesseActuelle = $_vitesseActuelle;
+    }
+
+    public function setIsDemarree(bool $_isDemarree){
+        $this->_isDemarree = $_isDemarree;
+    }
 
 
 
